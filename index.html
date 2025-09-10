@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoBuild - Soluciones IoT Integrales para Constructoras Modernas</title>
+    <meta name="description" content="Plataforma SaaS especializada en dispositivos IoT para constructoras. Centraliza el control de dispositivos inteligentes en edificios residenciales, permitiendo gestión personalizada para propietarios y administración de áreas comunes.">
+    <meta name="keywords" content="IoT constructoras, dispositivos inteligentes edificios, plataforma SaaS construcción, automatización residencial">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="IoBuild - Soluciones IoT para Constructoras">
+    <meta property="og:description" content="Transforma tus proyectos residenciales con nuestra plataforma IoT integral. Control centralizado para propietarios y administración inteligente de áreas comunes.">
+    <meta property="og:image" content="https://example.com/assets/img/og-image.jpg">
+    <meta property="og:url" content="https://IoBuild-iot.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IoBuild - Soluciones IoT para Constructoras">
+    <meta name="twitter:description" content="Plataforma SaaS especializada en dispositivos IoT para constructoras modernas.">
+    <meta name="twitter:image" content="https://example.com/assets/img/twitter-card.jpg">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "IoBuild",
+        "description": "Plataforma SaaS especializada en dispositivos IoT para constructoras",
+        "url": "https://IoBuild-iot.com",
+        "logo": "https://IoBuild-iot.com/assets/img/logo.png",
+        "sameAs": [
+            "https://linkedin.com/company/IoBuild-iot",
+            "https://twitter.com/IoBuild_iot"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-0123",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+        }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link" aria-label="Ir al inicio">
+                        <img src="assets/img/logo.png" alt="IoBuild Logo" class="logo__image">
+                    </a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#benefits" class="nav__link">Beneficios</a></li>
+                        <li class="nav__item"><a href="#features" class="nav__link">Características</a></li>
+                        <li class="nav__item"><a href="#pricing" class="nav__link">Planes</a></li>
+                        <li class="nav__item"><a href="about-us.html" class="nav__link">Nosotros</a></li>
+                        <li class="nav__item"><a href="faq.html" class="nav__link">FAQ</a></li>
+                    </ul>
+                    <a href="#pricing" class="cta-primary">Empezar Ahora</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section - For Decisive Visitors -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Revoluciona tus Proyectos Residenciales con IoT Inteligente
+                        </h1>
+                        <p class="hero__subtitle">
+                            La plataforma SaaS líder que integra dispositivos IoT desde la construcción, 
+                            ofreciendo control personalizado para propietarios y gestión centralizada 
+                            de áreas comunes para administradores.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="#" class="cta-button cta-button--primary">
+                                ¡Lo quiero!
+                            </a>
+                            <a href="#benefits" class="cta-button cta-button--secondary">
+                                Ver Beneficios
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <img src="assets/img/hero-dashboard.png" alt="Dashboard de control IoT IoBuild" class="hero__image" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section - For Emotional Visitors -->
+        <section class="benefits-section" id="benefits">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">¿Por qué Elegir IoBuild?</h2>
+                    <p class="section__subtitle">
+                        Transforma la experiencia de vida en tus desarrollos residenciales
+                    </p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Integración desde Construcción</h3>
+                        <p class="benefit-card__description">
+                            Implementamos los dispositivos IoT durante el proceso de construcción, 
+                            eliminando modificaciones posteriores costosas.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Control Personalizado</h3>
+                        <p class="benefit-card__description">
+                            Cada propietario puede configurar y controlar los dispositivos IoT 
+                            de su apartamento según sus preferencias personales.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Gestión Centralizada</h3>
+                        <p class="benefit-card__description">
+                            Los administradores pueden controlar eficientemente todos los 
+                            dispositivos de áreas comunes desde una sola plataforma.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Valor Agregado</h3>
+                        <p class="benefit-card__description">
+                            Aumenta el valor de tus desarrollos residenciales ofreciendo 
+                            tecnología de vanguardia que diferencia tu proyecto.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Ahorro Energético</h3>
+                        <p class="benefit-card__description">
+                            Optimización automática del consumo energético que reduce 
+                            costos operativos y mejora la sostenibilidad del edificio.
+                        </p>
+                    </div>
+                    
+                    <div class="benefit-card">
+                        <div class="benefit-card__icon">
+                            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="benefit-card__title">Soporte Especializado</h3>
+                        <p class="benefit-card__description">
+                            Nuestro equipo técnico brinda soporte continuo y actualizaciones 
+                            para mantener el sistema funcionando óptimamente.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="section__cta">
+                    <a href="#" class="cta-button cta-button--secondary">
+                        Registrar mi Proyecto
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section - For Logical Visitors -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Características Técnicas Avanzadas</h2>
+                    <p class="section__subtitle">
+                        Tecnología de vanguardia diseñada para la industria de la construcción
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-item__content">
+                            <h3 class="feature-item__title">Dashboard Intuitivo</h3>
+                            <p class="feature-item__description">
+                                Interfaz de usuario moderna y fácil de usar que permite a propietarios 
+                                y administradores controlar todos los dispositivos IoT de manera intuitiva. 
+                                Compatible con dispositivos móviles y desktop.
+                            </p>
+                            <ul class="feature-item__list">
+                                <li>Control en tiempo real</li>
+                                <li>Configuraciones personalizables</li>
+                                <li>Notificaciones inteligentes</li>
+                                <li>Acceso multiplataforma</li>
+                            </ul>
+                        </div>
+                        <div class="feature-item__visual">
+                            <img src="assets/img/dashboard-feature.png" alt="Dashboard de control IoT" class="feature-item__image" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item feature-item--reverse">
+                        <div class="feature-item__visual">
+                            <img src="assets/img/devices-feature.png" alt="Dispositivos IoT compatibles" class="feature-item__image" loading="lazy">
+                        </div>
+                        <div class="feature-item__content">
+                            <h3 class="feature-item__title">Ecosistema de Dispositivos</h3>
+                            <p class="feature-item__description">
+                                Amplia compatibilidad con los principales fabricantes de dispositivos IoT. 
+                                Desde iluminación inteligente hasta sistemas de seguridad y climatización 
+                                automatizada.
+                            </p>
+                            <ul class="feature-item__list">
+                                <li>Luces y enchufes inteligentes</li>
+                                <li>Termostatos y climatización</li>
+                                <li>Cámaras y sistemas de seguridad</li>
+                                <li>Sensores ambientales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-item__content">
+                            <h3 class="feature-item__title">Gestión de Áreas Comunes</h3>
+                            <p class="feature-item__description">
+                                Herramientas especializadas para administradores que permiten controlar 
+                                eficientemente la iluminación de pasillos, parques, ascensores y otras 
+                                áreas compartidas del edificio.
+                            </p>
+                            <ul class="feature-item__list">
+                                <li>Programación automática</li>
+                                <li>Monitoreo de consumo</li>
+                                <li>Mantenimiento predictivo</li>
+                                <li>Reportes detallados</li>
+                            </ul>
+                        </div>
+                        <div class="feature-item__visual">
+                            <img src="assets/img/common-areas-feature.png" alt="Gestión de áreas comunes" class="feature-item__image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section__cta">
+                    <a href="#" class="cta-button cta-button--secondary">
+                        Quiero empezar ya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof-section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Confiado por las Mejores Constructoras</h2>
+                    <p class="section__subtitle">
+                        Empresas líderes ya están transformando sus proyectos con IoBuild
+                    </p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__quote">
+                                "IoBuild transformó completamente la experiencia de nuestros compradores. 
+                                La integración desde construcción fue perfecta y ahora ofrecemos un valor agregado 
+                                real que nos diferencia de la competencia."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="assets/img/testimonial-1.jpg" alt="María González" class="testimonial-card__avatar" loading="lazy">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">María González</h4>
+                                <p class="testimonial-card__role">Directora de Proyectos, Constructora Premium</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__quote">
+                                "El ahorro en costos de instalación posterior fue increíble. Además, nuestros 
+                                clientes están encantados con poder personalizar completamente su experiencia IoT. 
+                                Es una inversión que se paga sola."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="assets/img/testimonial-2.jpg" alt="Carlos Ramírez" class="testimonial-card__avatar" loading="lazy">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Carlos Ramírez</h4>
+                                <p class="testimonial-card__role">Gerente General, Desarrollos Modernos</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p class="testimonial-card__quote">
+                                "La plataforma es intuitiva y el soporte técnico excepcional. Hemos implementado 
+                                IoBuild en 5 proyectos y cada vez los resultados superan nuestras expectativas. 
+                                Nuestros compradores lo aman."
+                            </p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img src="assets/img/testimonial-3.jpg" alt="Ana Morales" class="testimonial-card__avatar" loading="lazy">
+                            <div class="testimonial-card__info">
+                                <h4 class="testimonial-card__name">Ana Morales</h4>
+                                <p class="testimonial-card__role">CEO, Innovar Construcciones</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section__cta">
+                    <a href="#" class="cta-button cta-button--secondary">
+                        Crear mi Cuenta Ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Planes Diseñados para tu Escala</h2>
+                    <p class="section__subtitle">
+                        Elige el plan perfecto según el tamaño de tu proyecto y necesidades de soporte
+                    </p>
+                </div>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Starter</h3>
+                            <p class="pricing-card__subtitle">Perfecto para proyectos pequeños</p>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__currency">$</span>
+                                <span class="pricing-card__amount">299</span>
+                                <span class="pricing-card__period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__content">
+                            <ul class="pricing-card__features">
+                                <li>Hasta 50 dispositivos IoT</li>
+                                <li>Dashboard básico</li>
+                                <li>Soporte por email</li>
+                                <li>Actualizaciones incluidas</li>
+                                <li>1 administrador</li>
+                                <li>Reportes mensuales</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pricing-card pricing-card--featured">
+                        <div class="pricing-card__badge">Más Popular</div>
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Professional</h3>
+                            <p class="pricing-card__subtitle">Ideal para proyectos medianos</p>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__currency">$</span>
+                                <span class="pricing-card__amount">599</span>
+                                <span class="pricing-card__period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__content">
+                            <ul class="pricing-card__features">
+                                <li>Hasta 200 dispositivos IoT</li>
+                                <li>Dashboard avanzado</li>
+                                <li>Soporte prioritario 24/7</li>
+                                <li>Actualizaciones y nuevas features</li>
+                                <li>3 administradores</li>
+                                <li>Reportes en tiempo real</li>
+                                <li>API personalizada</li>
+                                <li>Capacitación incluida</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-card__header">
+                            <h3 class="pricing-card__title">Enterprise</h3>
+                            <p class="pricing-card__subtitle">Para grandes desarrollos</p>
+                            <div class="pricing-card__price">
+                                <span class="pricing-card__currency">$</span>
+                                <span class="pricing-card__amount">1,299</span>
+                                <span class="pricing-card__period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="pricing-card__content">
+                            <ul class="pricing-card__features">
+                                <li>Dispositivos IoT ilimitados</li>
+                                <li>Dashboard enterprise</li>
+                                <li>Soporte dedicado 24/7</li>
+                                <li>Desarrollo de features custom</li>
+                                <li>Administradores ilimitados</li>
+                                <li>Analytics avanzados</li>
+                                <li>API completa</li>
+                                <li>Consultoría especializada</li>
+                                <li>SLA garantizado</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="container">
+                <div class="final-cta__content">
+                    <h2 class="final-cta__title">
+                        ¿Listo para Liderar la Innovación en Construcción?
+                    </h2>
+                    <p class="final-cta__subtitle">
+                        Únete a las constructoras que ya están transformando la experiencia residencial. 
+                        Comienza tu proyecto IoT hoy y diferénciate de la competencia.
+                    </p>
+                    <div class="final-cta__buttons">
+                        <a href="#" class="cta-button cta-button--primary cta-button--large">
+                            Crear Cuenta Ahora
+                        </a>
+                        <a href="#pricing" class="cta-button cta-button--secondary cta-button--large">
+                            Ver Planes
+                        </a>
+                    </div>
+                    <p class="final-cta__note">
+                        Implementación en 30 días • Sin costos de setup • ROI garantizado
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section footer__section--brand">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="IoBuild Logo" class="footer__logo-image">
+                    </div>
+                    <p class="footer__description">
+                        Transformando la industria de la construcción con soluciones IoT integrales 
+                        que agregan valor real a los desarrollos residenciales modernos.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Producto</h4>
+                    <ul class="footer__links">
+                        <li><a href="#features" class="footer__link">Características</a></li>
+                        <li><a href="#pricing" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Documentación</a></li>
+                        <li><a href="#" class="footer__link">API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Empresa</h4>
+                    <ul class="footer__links">
+                        <li><a href="about-us.html" class="footer__link">Nosotros</a></li>
+                        <li><a href="#" class="footer__link">Carreras</a></li>
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Prensa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Soporte</h4>
+                    <ul class="footer__links">
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link">Contacto</a></li>
+                        <li><a href="#" class="footer__link">Centro de Ayuda</a></li>
+                        <li><a href="#" class="footer__link">Estado del Sistema</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title">Legal</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Términos de Uso</a></li>
+                        <li><a href="#" class="footer__link">Política de Privacidad</a></li>
+                        <li><a href="#" class="footer__link">Cookies</a></li>
+                        <li><a href="#" class="footer__link">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2025 IoBuild. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
