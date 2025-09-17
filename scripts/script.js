@@ -3,8 +3,13 @@
  * Main functionality for interactive components
  */
 
+// Global variables for i18n
+let currentLang = 'es'; // Default language
+let translations = {};
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all interactive components
+    initI18n();
     initMobileMenu();
     initSmoothScrolling();
     initFAQAccordion();
@@ -12,6 +17,148 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
     initFormHandling();
 });
+
+/**
+ * Internationalization (i18n) Functionality
+ * Handles language switching and content translation
+ */
+async function initI18n() {
+    try {
+        // Load translations
+        const response = await fetch('./assets/translations.json');
+        translations = await response.json();
+        
+        // Get saved language or use default
+        currentLang = localStorage.getItem('preferred-language') || 'es';
+        
+        // Apply translations
+        applyTranslations();
+        
+        // Initialize language switcher
+        initLanguageSwitcher();
+        
+    } catch (error) {
+        console.error('Error loading translations:', error);
+    }
+}
+
+function initLanguageSwitcher() {
+    const langSwitcher = document.querySelector('.language-switcher');
+    if (!langSwitcher) return;
+    
+    const buttons = langSwitcher.querySelectorAll('.lang-btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedLang = this.getAttribute('data-lang');
+            if (selectedLang !== currentLang) {
+                switchLanguage(selectedLang);
+            }
+        });
+    });
+    
+    // Update active state
+    updateLanguageSwitcherState();
+}
+
+function switchLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Apply translations
+    applyTranslations();
+    
+    // Update switcher state
+    updateLanguageSwitcherState();
+}
+
+function updateLanguageSwitcherState() {
+    const buttons = document.querySelectorAll('.lang-btn');
+    buttons.forEach(button => {
+        const isActive = button.getAttribute('data-lang') === currentLang;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', isActive);
+    });
+}
+
+function applyTranslations() {
+    if (!translations[currentLang]) return;
+    
+    const currentPage = getCurrentPage();
+    const pageTranslations = translations[currentLang][currentPage] || {};
+    const commonTranslations = translations[currentLang].common || {};
+    
+    // Apply translations to elements with data-translate attribute
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        const translation = pageTranslations[key] || commonTranslations[key];
+        
+        if (translation) {
+            if (element.tagName === 'INPUT' && element.type === 'submit') {
+                element.value = translation;
+            } else if (element.hasAttribute('placeholder')) {
+                element.placeholder = translation;
+            } else if (element.hasAttribute('aria-label')) {
+                element.setAttribute('aria-label', translation);
+            } else if (element.hasAttribute('alt')) {
+                element.setAttribute('alt', translation);
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+    
+    // Update meta tags
+    updateMetaTags();
+}
+
+function getCurrentPage() {
+    const path = window.location.pathname;
+    if (path.includes('about-us')) return 'about';
+    if (path.includes('faq')) return 'faq';
+    return 'index';
+}
+
+function updateMetaTags() {
+    const currentPage = getCurrentPage();
+    const pageTranslations = translations[currentLang][currentPage] || {};
+    
+    // Update title
+    if (pageTranslations.title) {
+        document.title = pageTranslations.title;
+    }
+    
+    // Update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && pageTranslations.meta_description) {
+        metaDesc.setAttribute('content', pageTranslations.meta_description);
+    }
+    
+    // Update Open Graph tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle && pageTranslations.og_title) {
+        ogTitle.setAttribute('content', pageTranslations.og_title);
+    }
+    
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc && pageTranslations.og_description) {
+        ogDesc.setAttribute('content', pageTranslations.og_description);
+    }
+    
+    // Update Twitter Card tags
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle && pageTranslations.twitter_title) {
+        twitterTitle.setAttribute('content', pageTranslations.twitter_title);
+    }
+    
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twitterDesc && pageTranslations.twitter_description) {
+        twitterDesc.setAttribute('content', pageTranslations.twitter_description);
+    }
+}
 
 /**
  * Mobile Menu Toggle Functionality
