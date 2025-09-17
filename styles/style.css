@@ -349,6 +349,47 @@ p {
     border-radius: var(--radius-full);
 }
 
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-1);
+    background-color: var(--color-gray-100);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-1);
+    margin-left: var(--spacing-4);
+}
+
+.lang-btn {
+    padding: var(--spacing-1) var(--spacing-3);
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.lang-btn:hover {
+    color: var(--color-primary);
+    background-color: var(--color-gray-200);
+}
+
+.lang-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-btn:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -1307,6 +1348,13 @@ p {
     
     .mobile-menu-toggle {
         display: flex;
+    }
+    
+    /* Language switcher responsive */
+    .language-switcher {
+        margin-left: 0;
+        margin-top: var(--spacing-4);
+        justify-content: center;
     }
     
     .hero-section {
