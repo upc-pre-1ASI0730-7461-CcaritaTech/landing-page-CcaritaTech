@@ -4,7 +4,7 @@
  */
 
 // Global variables for i18n
-let currentLang = 'es'; // Default language
+let currentLang = 'en'; // Default language
 let translations = {};
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -29,7 +29,7 @@ async function initI18n() {
         translations = await response.json();
         
         // Get saved language or use default
-        currentLang = localStorage.getItem('preferred-language') || 'es';
+        currentLang = localStorage.getItem('preferred-language') || 'en';
         
         // Apply translations
         applyTranslations();
