@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="title">FAQ - Frequently Asked Questions - IoBuild</title>
+    <meta name="description" data-translate="meta_description" content="Find answers to the most frequently asked questions about IoBuild, our SaaS platform for IoT devices in construction.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html" class="header__logo-link" aria-label="Go to home" data-translate="go_home">
+                        <img src="assets/img/logo.png" alt="IoBuild Logo" class="logo__image">
+                    </a>
+                </div>
+                
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#benefits" class="nav__link" data-translate="nav_benefits">Benefits</a></li>
+                        <li class="nav__item"><a href="index.html#features" class="nav__link" data-translate="nav_features">Features</a></li>
+                        <li class="nav__item"><a href="index.html#pricing" class="nav__link" data-translate="nav_pricing">Plans</a></li>
+                        <li class="nav__item"><a href="about-us.html" class="nav__link" data-translate="nav_about">About Us</a></li>
+                        <li class="nav__item"><a href="faq.html" class="nav__link nav__link--active" data-translate="nav_faq">FAQ</a></li>
+                    </ul>
+                    <div class="language-switcher">
+                        <button class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+                    </div>
+                    <a href="index.html#pricing" class="cta-primary" data-translate="start_now">Get Started</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Open navigation menu" data-translate="mobile_menu_toggle">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header__content">
+                    <h1 class="page-header__title" data-translate="faq_title">Frequently Asked Questions</h1>
+                    <p class="page-header__subtitle" data-translate="faq_subtitle">
+                        Answers to the most common questions about IoBuild
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-categories">
+                    <button class="faq-category-btn faq-category-btn--active" data-category="general" data-translate="faq_cat_general">General</button>
+                    <button class="faq-category-btn" data-category="technical" data-translate="faq_cat_technical">Technical</button>
+                    <button class="faq-category-btn" data-category="pricing" data-translate="faq_cat_pricing">Pricing</button>
+                    <button class="faq-category-btn" data-category="support" data-translate="faq_cat_support">Support</button>
+                </div>
+
+                <!-- General FAQ -->
+                <div class="faq-group faq-group--active" data-category="general">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_1_1">What is IoBuild and how does it work?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_1_1">IoBuild is a specialized SaaS platform that allows for the integration of IoT devices directly during the construction process of residential buildings. It works by centralizing the control of all smart devices on a single platform, where each owner can customize their apartment's settings and administrators can manage common areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_1_2">How is it different from other automation solutions?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_1_2">Unlike traditional solutions that are installed after construction, IoBuild is integrated from the planning and construction process. This eliminates costly subsequent modifications, ensures a clean and professional installation, and allows for an architectural design that incorporates technology from the start.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_1_3">What type of construction companies can benefit?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_1_3">Our solution is designed for construction companies of all sizes that develop residential projects. From boutique condominium developers to large construction companies managing multiple projects simultaneously. It especially benefits those looking to differentiate themselves in the market by offering technological added value.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_1_4">How long does it take to implement the solution?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_1_4">A typical implementation takes between 15-30 days from contract signing. This includes technical planning, platform configuration, device installation during construction, system testing, and team training. The exact time depends on the size and complexity of the project.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical FAQ -->
+                <div class="faq-group" data-category="technical">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_2_1">What IoT devices are compatible?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_2_1">We support a wide range of devices including: smart lighting (Philips Hue, LIFX), thermostats (Nest, Ecobee), smart plugs and switches, security cameras, motion and environmental sensors, smart locks, and automated irrigation systems. We work with major standards like Zigbee, Z-Wave, WiFi, and Thread.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_2_2">How is data security ensured?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_2_2">We implement multiple layers of security: end-to-end encryption for all communications, multi-factor authentication, cloud servers with SOC 2 certification, regular security audits, and compliance with GDPR and other privacy regulations. Data is geographically distributed to ensure availability and backup.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_2_3">Does it require special network infrastructure?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_2_3">We recommend a robust WiFi network with distributed access points for optimal coverage. We also suggest Ethernet cabling in key areas and a central hub for devices requiring a wired connection. Our technical team conducts a preliminary analysis to determine the specific requirements for each project.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_2_4">Does the platform work without an internet connection?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_2_4">Yes, many basic functions work in local mode without internet: control of lights, thermostats, and security devices maintain their functionality. However, advanced features like remote notifications, automatic updates, and access from outside the building require an internet connection.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing FAQ -->
+                <div class="faq-group" data-category="pricing">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_3_1">How is the pricing model structured?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_3_1">We offer three main plans based on the number of IoT devices and support level: Starter (up to 50 devices), Professional (up to 200 devices), and Enterprise (unlimited). Each plan includes the platform, technical support, updates, and different levels of advanced features. Prices are monthly with discounts for annual commitment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_3_2">Are there any installation or initial setup costs?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_3_2">We do not charge initial setup or configuration fees. The physical installation of devices is the responsibility of the construction company or its contractors (we can recommend certified partners). We include the complete platform setup, team training, and support for the first month at no additional cost.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_3_3">Do you offer discounts for volume or multiple projects?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_3_3">Yes, we offer tiered discounts for construction companies with multiple projects or large volumes of units. We also have custom corporate plans for companies managing more than 500 residential units. Contact our sales team for a personalized quote.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_3_4">What does the trial period include?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_3_4">We offer a 14-day demo that includes full access to the platform with sample data, a personalized demonstration session with our team, complete technical documentation, and a consultation with our specialists to assess the technical feasibility of your specific project.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support FAQ -->
+                <div class="faq-group" data-category="support">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_4_1">What kind of technical support do you offer?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_4_1">We offer tiered support based on the plan: Starter includes email support during business hours, Professional adds 24/7 phone and chat support, and Enterprise includes a dedicated account manager and on-site support when necessary. We also provide detailed documentation, video tutorials, and regular webinars.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_4_2">Do you offer training for the construction company's team?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_4_2">Yes, we include comprehensive training in all our plans. This includes training sessions for administrators, step-by-step documentation, advanced user certification, and follow-up sessions after implementation. For the Enterprise plan, we also offer personalized on-site training.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_4_3">How do you handle system updates?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_4_3">Updates are performed automatically without interrupting service. We maintain a monthly release cycle for minor improvements and quarterly releases for new features. We always notify in advance about major changes and offer beta testing periods for Enterprise customers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span data-translate="faq_q_4_4">What happens if a device fails?</span>
+                            <svg class="faq-icon" viewBox="0 0 24 24">
+                                <path d="M7 10l5 5 5-5z"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p data-translate="faq_a_4_4">Our system includes proactive monitoring that detects devices with issues before they fail completely. We provide remote diagnostics, troubleshooting guides, and, when necessary, coordinate with manufacturers for warranty replacements. For Enterprise customers, we maintain an inventory of replacement devices for critical cases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="contact-cta-section">
+            <div class="container">
+                <div class="contact-cta__content">
+                    <h2 class="contact-cta__title" data-translate="faq_cta_title">Didn't Find Your Answer?</h2>
+                    <p class="contact-cta__subtitle" data-translate="faq_cta_subtitle">
+                        Our team of experts is ready to answer all your specific questions 
+                        about IoBuild and your project.
+                    </p>
+                    <div class="contact-cta__buttons">
+                        <a href="#" class="cta-button cta-button--primary" data-translate="faq_cta_primary">
+                            Contact Support
+                        </a>
+                        <a href="index.html#pricing" class="cta-button cta-button--secondary" data-translate="faq_cta_secondary">
+                            Request Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section footer__section--brand">
+                    <div class="footer__logo">
+                        <img src="assets/img/logo.png" alt="IoBuild Logo" class="footer__logo-image">
+                       
+                    </div>
+                    <p class="footer__description" data-translate="footer_description">
+                        Transforming the construction industry with comprehensive IoT solutions that add real value to modern residential developments.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title" data-translate="footer_product">Product</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html#features" class="footer__link" data-translate="footer_features">Features</a></li>
+                        <li><a href="index.html#pricing" class="footer__link" data-translate="footer_pricing">Pricing</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_docs">Documentation</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_api">API</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title" data-translate="footer_company">Company</h4>
+                    <ul class="footer__links">
+                        <li><a href="about-us.html" class="footer__link" data-translate="footer_about">About Us</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_careers">Careers</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_blog">Blog</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_press">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title" data-translate="footer_support">Support</h4>
+                    <ul class="footer__links">
+                        <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_contact">Contact</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_help">Help Center</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_status">System Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__section-title" data-translate="footer_legal">Legal</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link" data-translate="footer_terms">Terms of Use</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_privacy">Privacy Policy</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_cookies">Cookies</a></li>
+                        <li><a href="#" class="footer__link" data-translate="footer_gdpr">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright" data-translate="footer_copyright">
+                    © 2025 IoBuild. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
