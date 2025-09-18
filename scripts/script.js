@@ -492,12 +492,15 @@ function initHeaderScrollEffect() {
             header.classList.remove('scrolled');
         }
         
-        // Hide header when scrolling down, show when scrolling up
+        // Previous behavior hid the header when scrolling down. Disabled so header remains visible.
+        // If you prefer auto-hide, uncomment the block below.
+        /*
         if (currentScrollY > lastScrollY && currentScrollY > 200) {
             header.style.transform = 'translateY(-100%)';
         } else {
             header.style.transform = 'translateY(0)';
         }
+        */
         
         lastScrollY = currentScrollY;
     });
