@@ -105,7 +105,7 @@ Follow this pattern:
         </div>
         <!-- Section content -->
         <div class="section__cta">
-            <a href="#" class="cta-button cta-button--primary">Call To Action</a>
+            <a href="https://io-build-frontend.vercel.app/monitoring/dashboard" class="cta-button cta-button--primary">Call To Action</a>
         </div>
     </div>
 </section>
