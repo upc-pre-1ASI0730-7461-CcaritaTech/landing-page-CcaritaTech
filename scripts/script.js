@@ -119,6 +119,7 @@ function getCurrentPage() {
     const path = window.location.pathname;
     if (path.includes('about-us')) return 'about';
     if (path.includes('faq')) return 'faq';
+    if (path.includes('tsAndCs') || path.includes('ts-and-cs')) return 'terms';
     return 'index';
 }
 
