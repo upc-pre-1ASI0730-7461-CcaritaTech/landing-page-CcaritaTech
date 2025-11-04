@@ -120,6 +120,7 @@ function getCurrentPage() {
     if (path.includes('about-us')) return 'about';
     if (path.includes('faq')) return 'faq';
     if (path.includes('tsAndCs') || path.includes('ts-and-cs')) return 'terms';
+    if (path.includes('privacy-policy')) return 'privacy';
     return 'index';
 }
 

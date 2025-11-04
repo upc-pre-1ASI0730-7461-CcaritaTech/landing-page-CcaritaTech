@@ -1338,6 +1338,17 @@ p {
     line-height: var(--line-height-tight);
 }
 
+/* Subtitle used inside terms/privacy articles (h3) - smaller than title but above body text */
+.terms-article__subtitle {
+    display: block;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-900);
+    margin: var(--spacing-4) 0 var(--spacing-3);
+    line-height: var(--line-height-snug);
+}
+
 .terms-article__text {
     font-family: var(--font-family-body);
     font-size: var(--font-size-base);
