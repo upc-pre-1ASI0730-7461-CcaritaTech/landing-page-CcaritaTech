@@ -167,7 +167,11 @@
       "about_cta_title": "¿Quieres Conocer Más?",
       "about_cta_subtitle": "Estamos aquí para ayudarte a transformar tus proyectos de construcción con tecnología IoT de vanguardia.",
       "about_cta_primary": "Ver Nuestros Planes",
-      "about_cta_secondary": "Contactar Equipo"
+      "about_cta_secondary": "Contactar Equipo",
+      "about_product_title": "Sobre el Producto",
+      "about_product_subtitle": "Descubre cómo IoBuild transforma proyectos de construcción con soluciones IoT innovadoras",
+      "about_team_video_title": "Sobre el Equipo",
+      "about_team_video_subtitle": "Conoce a los profesionales apasionados detrás de las soluciones innovadoras de IoBuild"
     },
     "faq": {
       "title": "FAQ - Preguntas Frecuentes - IoBuild",
@@ -526,7 +530,11 @@
       "about_cta_title": "Want to Know More?",
       "about_cta_subtitle": "We are here to help you transform your construction projects with cutting-edge IoT technology.",
       "about_cta_primary": "View Our Plans",
-      "about_cta_secondary": "Contact Team"
+      "about_cta_secondary": "Contact Team",
+      "about_product_title": "About the Product",
+      "about_product_subtitle": "Discover how IoBuild transforms construction projects with innovative IoT solutions",
+      "about_team_video_title": "About the Team",
+      "about_team_video_subtitle": "Meet the passionate professionals behind IoBuild's innovative solutions"
     },
     "faq": {
       "title": "FAQ - Frequently Asked Questions - IoBuild",
